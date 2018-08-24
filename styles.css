@@ -1,0 +1,115 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 960px;
+  margin: 1em auto;
+  border: 1px solid #cccccc;
+  padding: 1em;
+}
+
+.header {
+  /* background: #333333; */
+  color: #aaaaaa;
+  padding: 20px 5px;
+  z-index: 100;
+  margin: 0;
+  font-weight: 300;
+  font-size: 23px;
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  padding: 1em;
+}
+
+.slide {
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 0 0.2em black;
+  border: 1px solid #aaaaaa;
+}
+
+.hidden {
+  visibility: hidden;
+  width: 100%;
+}
+
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ededed;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+
+.next {
+  right: 1px;
+  border-radius: 50% 0 0 50%;
+}
+
+.prev {
+  left: 1px;
+  border-radius: 0 50% 50% 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ededed;
+  font-weight: lighter;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+footer {
+  /* background: #333333; */
+  color: #aaaaaa;
+  padding: 15px 5px;
+  text-align: center;
+}
+
+@media (max-width: 667px) {
+  .next,
+  .prev {
+    font-size: 12px;
+    padding: 12px 15px;
+    transition: all 0.3s ease-in;
+  }
+}
